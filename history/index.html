@@ -5,6 +5,7 @@
             <meta charset="utf-8">
             <title>TEMP - 历史</title>
             <link rel="stylesheet" href="/css/style.css">
+            
             <style>
                 @font-face{
                 font-family:"Times New Roman";
@@ -422,10 +423,10 @@ font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p><p 
 color:rgb(12,12,12);font-size:22.0000pt;mso-font-kerning:1.0000pt;" >Temp</span><span style="mso-spacerun:'yes';font-family:汉仪春然手书简;color:rgb(12,12,12);
 font-size:26.0000pt;mso-font-kerning:1.0000pt;" ><font face="汉仪春然手书简" >迄今已经走过了</font></span><u><span style="mso-spacerun:'yes';font-family:'Rajdhani Medium';mso-fareast-font-family:微软雅黑;
 color:rgb(12,12,12);text-decoration:underline;text-underline:single;
-font-size:22.0000pt;mso-font-kerning:1.0000pt;" >1 </span></u><span style="mso-spacerun:'yes';font-family:汉仪春然手书简;color:rgb(12,12,12);
+font-size:22.0000pt;mso-font-kerning:1.0000pt;" id="year_" >1 </span></u><span style="mso-spacerun:'yes';font-family:汉仪春然手书简;color:rgb(12,12,12);
 font-size:26.0000pt;mso-font-kerning:1.0000pt;" ><font face="汉仪春然手书简" >年</font></span><u><span style="mso-spacerun:'yes';font-family:'Rajdhani Medium';mso-fareast-font-family:微软雅黑;
 color:rgb(12,12,12);text-decoration:underline;text-underline:single;
-font-size:22.0000pt;mso-font-kerning:1.0000pt;" >03</span></u><span style="mso-spacerun:'yes';font-family:汉仪春然手书简;color:rgb(12,12,12);
+font-size:22.0000pt;mso-font-kerning:1.0000pt;" id="month_" >03</span></u><span style="mso-spacerun:'yes';font-family:汉仪春然手书简;color:rgb(12,12,12);
 font-size:26.0000pt;mso-font-kerning:1.0000pt;" ><font face="汉仪春然手书简" >个月</font></span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(12,12,12);
 font-size:22.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  align=center  style="text-align:center;" ><span style="mso-spacerun:'yes';font-family:汉仪春然手书简;color:rgb(12,12,12);
 font-size:26.0000pt;mso-font-kerning:1.0000pt;" ><font face="汉仪春然手书简" >下一篇章等待</font></span><span style="mso-spacerun:'yes';font-family:汉仪尚巍手书简;color:rgb(12,12,12);
@@ -450,7 +451,19 @@ font-size:22.0000pt;mso-font-kerning:1.0000pt;" ><font face="汉仪尚巍手书�
 font-size:26.0000pt;mso-font-kerning:1.0000pt;" >&nbsp;</span><span style="mso-spacerun:'yes';font-family:汉仪尚巍手书简;color:rgb(12,12,12);
 font-size:26.0000pt;mso-font-kerning:1.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:'Gobold Thin';mso-fareast-font-family:宋体;
 font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p></div><!--EndFragment-->
+mso-bidi-font-family:'Times New Roman';font-size:10.5000pt;mso-font-kerning:1.0000pt;" ><o:p>&nbsp;</o:p></span></p></div>
+                      <script>
+                                var yee = document.getElementById('year_');
+                                var moe = document.getElementById('month_');
+                                var dat = new Date();
+                                var ye = dat.getFullYear();
+                                var mo = dat.getMonth() + 1;
+                                var moo = ye * 12 + mo;
+                                var sub = moo - 24266;
+                                yee.textContent = Math.floor(sub/12);
+                                moe.textContent = Math.floor(sub%12);
+                      </script>
+                      <!--EndFragment-->
 <!-- ***** Footer Start ***** --><footer><div class="container">
     <div class="row"><div class="col-lg-12 col-md-12 col-sm-12"><ul class="social">
         <li><a href="https://discord.gg/HpUWYcEmpD"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
